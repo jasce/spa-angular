@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html  ng-app = "LunchCheck">
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src ="angular.min.js"></script>
+	<script type="text/javascript" src = "app.js"></script>
+	<title>Assignment 1 - Angular Coursera</title>
+	<style type="text/css">
+		body{text-align: center;font-size: 1.5em;}
+	</style>
+</head>
+<body>
+	<h1>Assignment 1</h1>
+	<div ng-controller = "LunchCheckController">
+	<input type="text" ng-model="values" style="border: 0.5px solid {{myColor}}" >
+	<br><br>
+	<button ng-click="CheckVaue();">Check If Too Much</button>
+	<br> <br>
+		<p style="color: {{myColor}}">{{message}}</p>		
+	</div>
+
+</body>
+</html>
